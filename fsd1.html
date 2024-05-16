@@ -1,0 +1,61 @@
+<!-- // date,undefine,function is not datatype in json
+//xml old using tag
+// stringify json to string 
+// parse to convert string to json -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day-1</title>
+    <script>
+        // print value in console
+        var obj={"marks":97,"name":"dhruv","dist":true}
+        console.log("obj is",obj)
+        console.log("obj.marks is",obj.marks)
+        console.log("obj.name is",obj.name)
+        console.log("obj.dist is",obj.dist)
+        
+        // value is list and it is string to convert into json use parse
+        var user='{"name":["dhruv","chavda","divy","dev"],"age":20}'
+        obj=JSON.parse(user)
+        console.log(obj.name)
+        // convert json to string   using stringify
+        obj2=JSON.stringify(user)
+        console.log(obj2.name)
+
+        // example for exam
+        const user3={"name":"abc","age":28,"course":["fsd1","de","fsd2"],"address":["t1","t2",{"t3":"try again"}]}
+        console.log(user3.course)
+        console.log(user3.course[2])
+        console.log(user3.address[2])
+        console.log(user3.address[2].t3)
+
+        // nested json
+        const sub={
+            "fsd":[
+                {"topic":"html"
+                ,"course":"beginer",
+                "content":{"tags":"table","form":"xyz"}
+                },
+                {"topic":"css",
+                 "course":"beginer",
+                "content":["tags","table","form"]}
+                  ]
+                  }
+        console.log(sub.fsd[0].content.tags)
+        console.log(sub.fsd[1].content[0])
+       
+        //  get object value using for loop
+        for(x in sub.fsd){
+            for(y in sub.fsd[x])
+            {
+                document.write(sub.fsd[x][y]+"<br>")
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

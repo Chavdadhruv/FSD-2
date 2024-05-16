@@ -1,0 +1,112 @@
+<!-- write json string with property yyyy-mm-dd and print in IST time.-->
+<!-- <!DOCTYPE html>
+
+1)
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function call1(){
+            var details='{"name":"name","dhruv",age:38ob":"2004-08-26"}'
+            var date1=JSON.parse(details)
+            date1.dob=new Date(date1.dob)
+            document.getElementById("demo").innerHTML="Birthdate of"+date1.name+"is"+date1.dob
+        }
+    </script>
+</head>
+<body>
+    <p id="demo">
+        <button onclick="call1()">Click</button>
+    </p>
+</body>
+</html> -->
+
+
+<!-- 2) -->
+
+
+<!-- write a function transform 1st and last that takes in an array and returns an objects with
+ the first elements of array as object key and last elements of array has that keys value -->
+<!-- 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <script>
+    function firstlast(array)
+    {
+        var object={}
+        object[array[0]]=array[array.length-1]
+        return object
+    }
+    var arraylist=["Queen","elizabeth","xyz",'london']
+console.log(firstlast(arraylist)) </script>
+ <body>
+    
+ </body>
+ </html> -->
+
+<!-- 
+ 3)
+
+ write a javascript to
+  store an array of objects having age and name 
+  display name and age of person with higest age 
+ -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var person=[{name:"dhruv",age:38},{name:"chavda",age:28},{name:"jaynish",age:50},{name:"dev",age:18}]
+        var oldperson=person[0]
+        for(i=1;i<person.length;i++){
+            if(person[i].age>oldperson.age)
+            {
+                oldperson=person[i]
+            }
+        }
+        console.log(oldperson)
+    </script>
+</body>
+</html> -->
+
+<!-- 4)
+write a script to define 2 json obj division 1 and 2 having an array
+ to store name of students this name should be sortd alpha and return on console -->
+
+<!-- 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <script>
+    var test={"division1":{'name':['Z','B','H']},
+             "division2":{'name':['Y','A','G']}}
+             var store=test.division1.name
+             var store2=test.division2.name
+             console.log(store,"   ",store2)
+             var con=store.concat(store2).sort()
+             console.log(con)
+
+ </script>
+ <body>
+ </body>
+ </html> -->
+
+ 

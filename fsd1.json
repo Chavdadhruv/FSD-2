@@ -1,0 +1,8 @@
+// date,undefine,function is not datatype in json
+//xml old 
+// stringify json to string 
+// parse to convert string to json
+
+
+var test={"division1":{'name':['Z','B','H']},
+"division2":{'name':['Y','A','G']}}

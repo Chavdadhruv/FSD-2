@@ -1,0 +1,143 @@
+<!-- anonymous function -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // anonymous function
+    setInterval(function(){
+        console.log("this message will print")},1000)
+    setInterval(()=>{
+        console.log('this message is')},1000)
+    
+    </script>
+</body>
+</html> -->
+
+
+<!-- 5) 
+Display odd of 2 nums on browser using callback-->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function mydisplay(sum){
+         document.getElementById("demo").innerHTML=sum 
+        } 
+        function mycalc(number1,number2,mycallback){
+         sum=number1+number2
+         mycallback(sum)
+        }
+        mycalc(13,15,mydisplay)
+     </script>
+</body>
+</html> -->
+
+
+
+<!--
+6)
+ initialize 2 variables and increment both the variable each time and 
+display addition of both the variables at interval of 1 s -->
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function add(a,b){
+         document.getElementById("demo").innerHTML=a+b}
+        a=2
+        b=5
+        setInterval(function(){add(a++,b++)},1000)
+    </script>
+</body>
+</html> -->
+
+
+<!-- 
+    7)
+    write a javascript that display hello with incresing font size
+    in intervel of 50mil/s in blue color it should stop when font size 
+    reach to 50px
+ -->
+
+<!-- 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ 
+ </head>
+ <body>
+     <div id="myid" style="color: blue;">
+         hello
+     </div>
+     <script>
+         a=20;
+         function add(){
+         document.getElementById("myid").style.fontSize=a+"px"
+         document.getElementById("myid").style.color="blue"}
+         setInterval(function()
+         {if(a<=300){
+             add(++a)
+         }
+        if(a>=100){
+            document.getElementById("myid").style.color="white"
+        }if(a>=200){
+            document.getElementById("myid").style.color="red"
+        }},10)
+     </script>
+ </body>
+ </html> -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <p id="demo" style="color:rgb(208, 108, 255)"></p>
+    <script>
+        size=15
+        function add2()
+        {
+            obj=document.getElementById("demo")
+            obj.innerHTML="hello";
+            obj.style.color="rgb(208, 108, 255)"
+            obj.style.fontSize=size+"px";
+            if(size<=50){
+                size++;
+            }
+        }
+        setInterval(add2,50)
+    </script>
+ </body>
+ </html>
+ 
